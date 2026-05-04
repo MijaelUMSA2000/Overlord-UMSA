@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mundo - Overlord UMSA</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            min-height: 100vh;
+            background-color: #050505; /* Color de fondo base */
+            color: #eeeeee;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        /* CAPA PARA LA IMAGEN CON TRANSPARENCIA */
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            /* Ruta a tu imagen en la carpeta img */
+            background-image: url('../img/descraga (3).jpg'); 
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            /* Ajusta este valor (0.1 a 0.9) para la transparencia que quieras */
+            opacity: 0.25; 
+            z-index: 0;
+        }
+
+        /* Contenedor principal */
+        .contenido-derecha {
+            position: relative;
+            z-index: 1;
+            margin-left: 240px; /* Espacio para el menú lateral */
+            width: calc(100% - 240px);
+            padding: 50px;
+            box-sizing: border-box;
+            background: rgba(10, 10, 10, 0.7); /* Fondo oscuro semitransparente para legibilidad */
+            min-height: 100vh;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: #d4af37;
+            text-align: center;
+            font-size: 2.2rem;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 20px;
+            margin-bottom: 40px;
+        }
+
+        .columna {
+            background: rgba(25, 25, 25, 0.6);
+            padding: 30px;
+            border-left: 4px solid #d4af37;
+            margin-bottom: 35px;
+            border-radius: 0 10px 10px 0;
+        }
+
+        h2 {
+            font-family: 'Cinzel', serif;
+            color: #d4af37;
+            margin-top: 0;
+            font-size: 1.5rem;
+        }
+
+        p {
+            line-height: 1.8;
+            text-align: justify;
+        }
+
+        strong { color: #d4af37; }
+    </style>
+</head>
+<body>
+   
+    <nav class="menu-lateral">
+       <div class="logo-nazarick"><a href="../index.html"><img src="../img/Overlord_logo.png" alt="Logo" class="img-logo"></a></div>
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="historia.html">HISTORIA</a></li>
+            <li><a href="novela.html">NOVELA</a></li>
+            <li><a href="personajes.html">PERSONAJES</a></li>
+            <li><a href="mundo.html" class="active">MUNDO</a></li>
+            <li><a href="galeria.html">GALERÍA</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+        <!-- SECCIÓN DE CRÉDITOS EN EL MENÚ -->
+    <div class="creditos-menu">
+        <p class="univ">UMSA - 2026</p>
+        <p class="autor">Mijael Josue Torrez Rodriguez</p>
+    </div>
+    </nav>
+
+    <main class="contenido-derecha">
+        <h1>ESTUDIO PROFUNDO: CRONOLOGÍA Y ALTERACIÓN DE LA REALIDAD</h1>
+        
+        <section class="seccion-texto">
+            <article class="columna">
+                <h2>I. La Teofanía de los Seis Grandes Dioses (600 a.A.)</h2>
+                <p>En una era donde la humanidad era el escalón más bajo de la cadena alimenticia, aparecieron seis entidades en el continente sur. No eran solo guerreros, sino los fundadores de la <strong>Teocracia de Slane</strong>.</p>
+                <p>Su legado más crítico fue la introducción de la religión como método de supervivencia y la preservación de ítems de nivel 100. Poseían el ítem de Clase Mundial <i>"Downfall of Castle and Country"</i>, capaz de controlar la mente incluso de seres divinos.</p>
+            </article>
+
+            <article class="columna">
+                <h2>II. La Hegemonía de los Ocho Reyes de la Codicia (500 a.A.)</h2>
+                <p>Este grupo transformó el mundo mediante la violencia absoluta. Desde su castillo flotante, <strong>Eryuentiu</strong>, lanzaron una campaña de exterminio contra los Lores Dragón primigenios.</p>
+                <p><strong>El Gran Cambio:</strong> Utilizaron un Ítem de Clase Mundial para reescribir el sistema de magia del mundo. La <i>Magia Salvaje</i> fue desplazada por la <strong>Magia de Grados</strong> (Tier Magic), facilitando que razas débiles pudieran aprender hechizos.</p>
+            </article>
+
+            <article class="columna">
+                <h2>III. El Interregno de los Trece Héroes (200 a.A.)</h2>
+                <p>Surgieron las "Deidades Malignas" que devastaron el continente. Los <strong>Trece Héroes</strong>, una alianza multirracial, detuvieron el apocalipsis.</p>
+                <p>Su líder era un Jugador de Yggdrasil que llegó con un nivel bajo pero poseía una tasa de crecimiento infinita. En este periodo, el <strong>Sabio Rey Minotauro</strong> instauró conceptos de derechos humanos básicos.</p>
+            </article>
+
+            <article class="columna">
+                <h2>IV. La Estructura de Poder Moderna (Año 0 - Nazarick)</h2>
+                <p>Antes de la llegada de Ainz, el continente se dividía en tres grandes ejes:</p>
+                <ul>
+                    <li><strong>Reino de Re-Estize:</strong> Una monarquía feudal en decadencia asfixiada por la corrupción.</li>
+                    <li><strong>Imperio de Baharuth:</strong> Un estado militar eficiente liderado por el "Emperador Sangriento".</li>
+                    <li><strong>Teocracia de Slane:</strong> La nación más antigua que protege a la humanidad en las sombras.</li>
+                </ul>
+            </article>
+
+            <article class="columna">
+                <h2>V. La Singularidad: La Gran Tumba de Nazarick</h2>
+                <p>A diferencia de oleadas anteriores, Nazarick llegó con un solo líder absoluto, <strong>Ainz Ooal Gown</strong>, y una base intacta. Esto marca el fin de la era de los humanos y el inicio de una era de dominación no-muerta donde la eficiencia y la lealtad reemplazan a la política tradicional.</p>
+            </article>
+        </section>
+    </main>
+
+
+</body>
+</html>

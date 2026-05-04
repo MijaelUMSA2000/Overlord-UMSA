@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Recursos - Overlord UMSA</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <style>
+        body {
+            /* Usamos el fondo de la biblioteca para mantener la estética */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.8)), 
+                              url('../img/overlord_wallpaper_hd_overlord_so_bin_art_hd_wallp_by_resourcedirectory_de02f5s-pre.jpg') !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-attachment: fixed !important;
+            display: flex;
+            margin: 0;
+            color: #eeeeee;
+        }
+
+        .contenido-principal {
+            margin-left: 240px !important;
+            width: calc(100% - 240px) !important;
+            padding: 50px !important;
+            min-height: 100vh;
+            box-sizing: border-box;
+            background: rgba(10, 10, 10, 0.8);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: #d4af37;
+            text-align: center;
+            border-bottom: 2px solid #d4af37;
+            padding-bottom: 15px;
+        }
+
+        .grid-recursos {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .tarjeta-recurso {
+            text-align: center;
+            background: rgba(30, 30, 30, 0.5);
+            padding: 20px;
+            border: 1px solid #d4af37;
+            transition: 0.3s;
+        }
+
+        .tarjeta-recurso:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.4);
+        }
+
+        .img-recurso {
+            width: 100%;
+            height: 150px;
+            object-fit: cover;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .tarjeta-recurso span {
+            display: block;
+            color: #d4af37;
+            font-family: 'Cinzel', serif;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    
+    <nav class="menu-lateral">
+       <div class="logo-nazarick"><a href="../index.html"><img src="../img/Overlord_logo.png" alt="Logo" class="img-logo"></a></div>
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="historia.html">HISTORIA</a></li>
+            <li><a href="novela.html">NOVELA</a></li>
+            <li><a href="personajes.html">PERSONAJES</a></li>
+            <li><a href="mundo.html">MUNDO</a></li>
+            <li><a href="galeria.html" class="active">GALERÍA</a></li>
+            <li><a href="contacto.html">CONTACTO</a></li>
+        </ul>
+        <!-- SECCIÓN DE CRÉDITOS EN EL MENÚ -->
+    <div class="creditos-menu">
+        <p class="univ">UMSA - 2026</p>
+        <p class="autor">Mijael Josue Torrez Rodriguez</p>
+    </div>
+    </nav>
+
+    <main class="contenido-principal">
+        <h1>RECURSOS Y COMUNIDADES DE NAZARICK</h1>
+
+        <div class="grid-recursos">
+            <!-- Arte Original -->
+            <a href="https://twitter.com/soubin" target="_blank" class="tarjeta-recurso">
+                <img src="../img/656764023_1273528564878223_6191647858897061378_n.jpg" alt="Arte so-bin" class="img-recurso">
+                <span>ARTE ORIGINAL (SO-BIN)</span>
+            </a>
+
+            <!-- Novelas -->
+            <a href="https://yenpress.com/series/overlord-light-novel" target="_blank" class="tarjeta-recurso">
+                <img src="../img/Overlord-min-2.jpg" alt="Novelas" class="img-recurso">
+                <span>NOVELAS LIGERAS</span>
+            </a>
+
+            <!-- Anime -->
+            <a href="https://www.crunchyroll.com/es/series/GR9P9331Y/overlord" target="_blank" class="tarjeta-recurso">
+                <img src="../img/crunchyroll4133.jpg" alt="Anime" class="img-recurso">
+                <span>ANIME (CRUNCHYROLL)</span>
+            </a>
+
+            <!-- Juego -->
+            <a href="https://store.steampowered.com/app/1453940/Overlord_Escape_from_Nazarick/" target="_blank" class="tarjeta-recurso">
+                <img src="../img/steamLogo_300.jpg" alt="Steam" class="img-recurso">
+                <span>JUEGO (STEAM)</span>
+            </a>
+        </div>
+    </main>
+
+
+</body>
+</html>

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Contacto - Nazarick UMSA</title>
+    <link rel="stylesheet" href="../css/estilo.css">
+    <style>
+        body {
+            /* Usamos el mismo fondo para mantener coherencia */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.8)), 
+                              url('../img/descarga (3).jpg') !important;
+            background-size: cover !important;
+            background-position: center !important;
+            background-attachment: fixed !important;
+            display: flex;
+            margin: 0;
+            color: #eeeeee;
+        }
+
+        .contenido-principal {
+            margin-left: 240px !important;
+            width: calc(100% - 240px) !important;
+            padding: 40px !important;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            box-sizing: border-box;
+        }
+
+        h1 {
+            font-family: 'Cinzel', serif;
+            color: #d4af37;
+            text-shadow: 0 0 15px rgba(212, 175, 55, 0.5);
+            margin-bottom: 10px;
+        }
+
+        .subtitulo {
+            text-align: center;
+            font-style: italic;
+            color: #bdc3c7;
+            margin-bottom: 30px;
+        }
+
+        /* Estilo del Formulario */
+        .formulario-nazarick {
+            background: rgba(15, 15, 15, 0.85);
+            backdrop-filter: blur(10px);
+            border: 2px solid #d4af37;
+            border-radius: 15px;
+            padding: 40px;
+            width: 100%;
+            max-width: 600px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.8);
+        }
+
+        fieldset {
+            border: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        legend {
+            font-family: 'Cinzel', serif;
+            color: #d4af37;
+            font-size: 1.5rem;
+            text-align: center;
+            width: 100%;
+            margin-bottom: 25px;
+            letter-spacing: 2px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            color: #d4af37;
+            font-weight: bold;
+            font-size: 0.9rem;
+        }
+
+        input, select, textarea {
+            width: 100%;
+            padding: 12px;
+            background: rgba(30, 30, 30, 0.7);
+            border: 1px solid #444;
+            border-radius: 5px;
+            color: #fff;
+            margin-bottom: 20px;
+            box-sizing: border-box;
+            outline: none;
+            transition: 0.3s;
+        }
+
+        input:focus, select:focus, textarea:focus {
+            border-color: #d4af37;
+            box-shadow: 0 0 10px rgba(212, 175, 55, 0.3);
+        }
+
+        /* Botones Épicos */
+        .contenedor-botones {
+            display: flex;
+            gap: 15px;
+            justify-content: center;
+            margin-top: 10px;
+        }
+
+        button {
+            padding: 12px 25px;
+            cursor: pointer;
+            font-family: 'Cinzel', serif;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: 0.4s;
+            text-transform: uppercase;
+        }
+
+        button[type="submit"] {
+            background: #d4af37;
+            color: #000;
+            border: none;
+        }
+
+        button[type="submit"]:hover {
+            background: #fff;
+            box-shadow: 0 0 20px #d4af37;
+        }
+
+        button[type="reset"] {
+            background: transparent;
+            color: #d4af37;
+            border: 1px solid #d4af37;
+        }
+
+        button[type="reset"]:hover {
+            background: rgba(212, 175, 55, 0.1);
+        }
+    </style>
+</head>
+<body>
+   
+    <nav class="menu-lateral">
+        <div class="logo-nazarick"><a href="../index.html"><img src="../img/Overlord_logo.png" alt="Logo" class="img-logo"></a></div>
+        <ul>
+            <li><a href="../index.html">INICIO</a></li>
+            <li><a href="historia.html">HISTORIA</a></li>
+            <li><a href="novela.html">NOVELA</a></li>
+            <li><a href="personajes.html">PERSONAJES</a></li>
+            <li><a href="mundo.html">MUNDO</a></li>
+            <li><a href="galeria.html">GALERÍA</a></li>
+            <li><a href="contacto.html" class="active">CONTACTO</a></li>
+        </ul>
+        <!-- SECCIÓN DE CRÉDITOS EN EL MENÚ -->
+    <div class="creditos-menu">
+        <p class="univ">UMSA - 2026</p>
+        <p class="autor">Mijael Josue Torrez Rodriguez</p>
+    </div>
+    </nav>
+
+    <main class="contenido-principal">
+        <h1>CENTRO DE MENSAJES DEL GREMIO</h1>
+        <p class="subtitulo">Registra tu presencia ante los Seres Supremos.</p>
+
+        <form action="#" method="post" class="formulario-nazarick">
+            <fieldset>
+                <legend>Pacto de Aventurero</legend>
+                
+                <label for="nombre">Nombre del Aventurero:</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Ainz Ooal Gown" required>
+
+                <label for="email">Correo Electrónico:</label>
+                <input type="email" id="email" name="email" placeholder="usuario@ejemplo.com" required>
+
+                <label for="clase">Clase / Raza:</label>
+                <select id="clase" name="clase">
+                    <option value="humano">Humano</option>
+                    <option value="heteromorfo">Heteromorfo (No-muerto, Demonio, etc.)</option>
+                    <option value="semi-humano">Semi-humano</option>
+                </select>
+
+                <label for="mensaje">Motivo de tu visita:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..."></textarea>
+
+                <div class="contenedor-botones">
+                    <button type="submit">ENVIAR MENSAJE</button>
+                    <button type="reset">BORRAR TODO</button>
+                </div>
+            </fieldset>
+        </form>
+    </main>
+
+</body>
+</html>
